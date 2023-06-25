@@ -1,0 +1,19 @@
+#festival-planner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    vertical-align: middle;
+    height: 100%;
+    margin: 10%;
+    h1{
+        margin: 2%;
+    }
+    #festival-inputs{
+        div{
+            button{
+                align-items: center;
+            }
+
+        }
+    }
+}

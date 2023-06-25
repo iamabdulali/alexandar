@@ -1,0 +1,194 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --swiper-navigation-size: 30px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#hero-section {
+  background: url(/img/herorip.gif) center center/cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  max-width: 90%;
+  margin: 3em auto;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  gap: 1em;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+select,
+input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  /* margin-bottom: 16px; */
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+#custom-datepicker {
+  display: flex;
+}
+
+#custom-datepicker input[type="text"] {
+  width: calc(50% - 5px);
+  display: inline-block;
+  margin-right: 10px;
+}
+
+#to-span {
+  display: inline-block;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+button {
+  padding: 8px 16px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+#car-hire-results {
+  margin-top: 20px;
+  text-align: center;
+  margin-bottom: 2em;
+  display: flex;
+  justify-content: center;
+}
+
+#map {
+  margin: 2em auto;
+  width: 90%;
+  height: 800px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+.hire-fuel-price {
+  color: #fff;
+  display: none;
+}
+
+.swiper-container {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.car-card {
+  position: relative;
+
+  display: inline-block;
+  vertical-align: top;
+  width: 30%;
+  padding: 10px;
+  margin-right: 10px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.car-card img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.car-card h2 {
+  margin-top: 0;
+  font-size: 16px;
+}
+
+.car-card p {
+  margin: 8px 0;
+}
+
+.swiper-button-next,
+.swiper-rtl .swiper-button-prev {
+  right: var(--swiper-navigation-sides-offset, 20px);
+}
+
+.swiper-button-prev,
+.swiper-rtl .swiper-button-next {
+  left: var(--swiper-navigation-sides-offset, 20px);
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  top: var(--swiper-navigation-top-offset, 37%);
+  font-weight: 600;
+}
+
+.hire-fuel-price {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.cartype {
+  text-transform: capitalize;
+}
+
+.swiper-slide {
+  cursor: pointer;
+}
+
+@media (max-width: 800px) {
+  #car-hire-results {
+    flex-direction: column;
+    align-items: center;
+    gap: 3em;
+  }
+
+  .car-card {
+    width: 90%;
+  }
+
+  form {
+    display: block;
+  }
+
+  select,
+  input[type="text"] {
+    margin-bottom: 16px;
+  }
+
+  #map {
+    height: 500px;
+  }
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rad kiwi rentals</title>
+    <!-- swiper css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <!-- datepicker css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.3.2/dist/css/datepicker.min.css">
+    <!--<link href='https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.css' rel='stylesheet' />-->
+    <!-- app css -->
+    <link rel="stylesheet" href="css/main.css">
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.css' rel='stylesheet' />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+
+    <!-- website container -->
+    <div id="hero-section"></div>
+
+    <div id="car-hire-website">
+        <form id="car-hire-options" action="">
+            <div id="pickup-location-container">
+                <!-- car type -->
+                <label for="pickup-location">Pickup Location:</label>
+                <select id="pickup-location" name="pickup-location">
+                    <option value="auckland">Auckland</option>
+                    <option value="wellington">Wellington</option>
+                    <option value="palmerston">Palmerston</option>
+                </select>
+            </div>
+            <div id="dropoff-container">
+                <!-- car type -->
+                <label for="dropoff">Dropoff Location:</label>
+                <select id="dropoff" name="dropoff">
+                    <option value="wellington">Wellington</option>
+                    <option value="palmerston">Palmerston</option>
+                    <option value="auckland">Auckland</option>
+
+                </select>
+            </div>
+            <div id="car-type-container">
+                <!-- car type -->
+                <label for="car-type">Car Type:</label>
+                <select id="car-type" name="car-type">
+                    <option value="motorbike">Motorbike</option>
+                    <option value="sedan">Sedan</option>
+                    <option value="suv">SUV</option>
+                    <option value="motorhome">Motorhome</option>
+                </select>
+            </div>
+
+            <div id="people-container">
+                <label for="people">Passengers:</label>
+                <select id="people" name="people">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                </select>
+            </div>
+
+            <div id="car-datepicker-container">
+                <label>Pickup and Return Dates:</label>
+                <div id="custom-datepicker">
+                    <!-- dates -->
+                    <input type="text" id="pickup-date" name="pickup-date">
+                    <span id="to-span">to</span>
+                    <input type="text" id="return-date" name="return-date">
+                </div>
+            </div>
+
+
+            <div id="submit-container">
+                <!-- submit -->
+                <button id="car-hire-submit">Submit</button>
+            </div>
+        </form>
+    </div>
+
+
+    <div id="car-hire-results">
+        <!-- set to only display when results generated -->
+        <!-- display car hire options and prices -->
+    </div>
+
+    <div class="hire-fuel-price">
+        <h2 class="petrol-cost"></h2>
+        <h2 class="hire-cost"></h2>
+        <h2 class="total-cost"></h2>
+    </div>
+    <div id="map"></div>
+
+    <!-- end website container -->
+
+    <!-- attach datepicker script -->
+    <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.3.2/dist/js/datepicker-full.min.js"></script>
+
+    <!-- <script src='https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.js'></script> -->
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.js'></script>
+    <script src="https://unpkg.com/@turf/turf@6/turf.min.js"></script>
+    <!-- attach website javascript -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
